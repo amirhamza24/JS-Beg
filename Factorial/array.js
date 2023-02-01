@@ -7,6 +7,6 @@ function factorial(number) {
     return  multi;
 }
 
-var num = 3;
+var num = 6;
 var result = factorial(num);
 console.log("Factorial of", num, "is = ", result);
