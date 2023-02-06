@@ -12,9 +12,10 @@ function findingBadData(numbers) {
     return count;
 }
 
-let inputNumbers = [-4, -9, -5, -33, -55, 23, -3, 34, 63, -5232];
+let inputNumbers = [-4, -9, -5, -33, -55];
 
 let finalBadData = findingBadData(inputNumbers);
 
 console.log(finalBadData);
+  
   
