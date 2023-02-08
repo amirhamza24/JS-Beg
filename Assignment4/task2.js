@@ -1,6 +1,10 @@
 function evenOdd(str) {
     
-    if(str.length % 2 === 0) {
+    if (typeof str !== 'string') {
+        return 'Please input string';
+    }
+
+    else if(str.length % 2 === 0) {
         return 'even';
     }
 
@@ -9,7 +13,6 @@ function evenOdd(str) {
     }
 }
 
-let anyString = 'chatgpt';
-let finalAns = evenOdd(anyString);
-
-console.log(finalAns);
+let anyString = 'Phero';
+let finalResult = evenOdd(anyString);
+console.log(finalResult);
