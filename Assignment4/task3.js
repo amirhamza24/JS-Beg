@@ -1,7 +1,11 @@
 function isLGSeven(number) {
     let difference = number - 7;
 
-    if(difference < 0) {
+    if(typeof number !== 'number') {
+        return 'Please input number';
+    }
+
+    else if(difference < 7) {
         return difference;
     }
 
@@ -10,7 +14,8 @@ function isLGSeven(number) {
     }
 }
 
-let inputNumber = -15;
-let finalResult = isLGSeven(inputNumber);
+let anyNumber = -15;
+
+let finalResult = isLGSeven(anyNumber);
 
 console.log(finalResult);
