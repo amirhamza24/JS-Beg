@@ -1,0 +1,16 @@
+/* font-family: 'Julee', cursive; */
+
+section .shoe {
+    font-family: 'Pacifico', cursive;
+    font-size: 45px;
+    text-align: center;
+}
+
+.card-box-shadow {
+    transition: .3s;
+}
+
+.card:hover.card-box-shadow {
+    box-shadow: 6px 2px 20px lightgray;
+}
+
