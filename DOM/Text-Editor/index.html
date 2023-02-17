@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+
+
+    <!-- Tailwind CSS Link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://kit.fontawesome.com/dc547d5d7c.js" crossorigin="anonymous"></script>
+
+</head>
+<body class="bg-stone-100">
+    <header>
+        <h1 class="text-4xl font-medium text-center mt-8">Make Your <span class="text-orange-600">Text</span>  Awesome</h1>
+    </header>
+
+    <main>
+        <section class="bg-sky-300 w-3/4 mt-7 p-10 mx-auto">
+            <div class="border border-black px-4">
+                <div class="flex justify-between py-2">
+                    <ul class="flex gap-2">
+                        <li id="bold-text" class="px-3 py-2 hover:bg-blue-500"><i class="fa-sharp fa-solid fa-bold"></i></li>
+                        <li id="italic-text" class="px-3 py-2 hover:bg-blue-500"><i class="fa-sharp fa-solid fa-italic"></i></li>
+                        <li id="under-text" class="px-3 py-2 hover:bg-blue-500"><i class="fa-sharp fa-solid fa-underline"></i></li>
+                    </ul>
+                    
+                    <ul class="flex gap-2">
+                        <li id="left-align" class="px-3 py-2 hover:bg-blue-500"><i class="fa-solid fa-align-left"></i></li>
+                        <li id="center-align" class="px-3 py-2 hover:bg-blue-500"><i class="fa-solid fa-align-center"></i></li>
+                        <li id="right-align" class="px-3 py-2 hover:bg-blue-500"><i class="fa-solid fa-align-right"></i></li>
+                        <li id="justify-align" class="px-3 py-2 hover:bg-blue-500"><i class="fa-solid fa-align-justify"></i></li>
+                    </ul>
+
+                    <div class="flex gap-2">
+                        <input class="w-16 px-2 border border-black outline-none" type="number" name="" id="text-size" min="1" value="16"/>
+                        <p id="upper-lower" class="cursor-pointer hover:bg-blue-500 py-2 px-3 border border-black">aA</p>
+                        <input id="text-color" class="my-2" type="color" id="color">
+                    </div>
+                    
+                </div>
+                
+                <hr class="w-full mb-4 mt-2 border-black">
+
+                <textarea class="py-2 px-4 mb-2 min-h-[300px] w-full resize-none border border-black" placeholder="Write Something Here..." name="" id="text-area-field" cols="30" rows="1"></textarea>
+            </div>
+        </section>
+    </main>
+    
+    
+    <script src="utilities.js"></script>
+    <script src="fontStyle.js"></script>
+
+</body>
+</html>
