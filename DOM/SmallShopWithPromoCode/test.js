@@ -63,6 +63,6 @@ document.getElementById('promo-code-btn').addEventListener('click', function() {
     }
 
     else {
-        alert('Your entered code is wrong. Please try again with enter valid code. Thank You..')
+        alert('Your entered code is wrong. Please try again with enter valid code. Thank You...');
     }
 })
