@@ -61,4 +61,19 @@ const getAvgOfSqr = (array) => {
 
 const array = [1, 2, 3, 4, 5];
 const avgOfSqr = getAvgOfSqr(array);
-console.log(avgOfSqr); 
+//console.log(avgOfSqr); 
+
+
+// practice problem 4
+const getAddArr = (array1, array2) => {
+    const newAddArr = [...array1, ...array2];
+    const largestNum = Math.max(...newAddArr);
+    return largestNum;
+
+}
+
+
+const array1 = [2, 7, 4, 10, 30, 43];
+const array2 = [4, 1, 47, 5, 53, 42];
+const resultArr = getAddArr(array1, array2);
+console.log(resultArr);
