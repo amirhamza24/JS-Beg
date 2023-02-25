@@ -1,4 +1,4 @@
-function addThree(num1, num2, num3 = 7) {
+const addThree = (num1, num2, num3 = 7) => {
     return num1 + num2 + num3;
 }
 
