@@ -51,6 +51,30 @@ const loadMealDetail = idMeal => {
     .then(data => displayMealDetails(data.meals[0]))
 }
 
+// same work, it will a async function
+
+// const loadMealDetail2 = async(idMeal) => {
+//     const url = `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${idMeal}`
+//     const res = await fetch(url);
+//     const data = res.json();
+//     displayMealDetails(data.meals[0])
+// }
+
+// same work, it try catch
+// const loadMealDetail2 = async(idMeal) => {
+//     const url = `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${idMeal}`
+//     try {
+//         const res = await fetch(url);
+//         const data = res.json();
+//         displayMealDetails(data.meals[0])
+//     }
+//     catch(error) {
+//         console.log(error)
+//     }
+// }
+
+
+
 const displayMealDetails = meal => {
     document.getElementById('mealDetailsLabel').innerText = meal.strMeal;
     const mealsDetails = document.getElementById('mealDetailsBody');
