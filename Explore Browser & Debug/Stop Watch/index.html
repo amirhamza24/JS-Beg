@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+
+    <!-- tailwind cdn link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <h1 class="text-7xl text-center mt-10 font-bold"><span class="text-violet-700">Stop</span> <span class="text-sky-600">Watch</span></h1>    
+
+    <section class="w-9/12 h-96 mx-auto mt-10 border border-teal-500 p-12 shadow-xl rounded">
+
+        <h1 id="number" class="flex justify-center items-center mt-8 text-9xl">0</h1>
+
+        <div class="button-al h-auto mt-16 flex items-end justify-center">
+            <button id="btn-start" class="bg-lime-500 px-10 py-3 text-2xl mr-3 shadow-md font-semibold rounded hover:bg-lime-400">Start</button>
+            
+            <button id="btn-stop" class="bg-cyan-500 px-10 py-3 text-2xl mr-3 shadow-md font-semibold rounded hover:bg-cyan-400">Stop</button>
+            
+            <button id="btn-stop" class="bg-rose-600 px-10 py-3 text-2xl shadow-md font-semibold rounded hover:bg-rose-500">Clear</button>
+        </div>
+    </section>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
