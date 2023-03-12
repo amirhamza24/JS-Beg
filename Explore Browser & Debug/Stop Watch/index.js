@@ -1,5 +1,5 @@
 document.getElementById('btn-start').addEventListener('click', function() {
-
+    // console.log('start btn');
     increaseNumber();
 })
 
